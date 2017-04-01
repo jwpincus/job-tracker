@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-
+  resources :categories
+ root to: "companies#index"
   resources :companies do
     resources :jobs
   end
